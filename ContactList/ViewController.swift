@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidAppear(_ animated: Bool) {
         if isError {
-            showError()
+            showGetContactsError()
         }
     }
 
@@ -112,9 +112,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return contactTitle
     }
     
-    private func showError() {
-        let alert = UIAlertController(title: NSLocalizedString("Ошибка!", comment: ""), message: "Не удалось получить доступ к контактам :(", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: NSLocalizedString("ок", comment: ""), style: .default, handler: nil)
+    private func showGetContactsError() {
+        let alertTitle = NSLocalizedString("error_title", comment: "")
+        let alertText = NSLocalizedString("get_contacts_error_text", comment: "")
+        let okButtonText = NSLocalizedString("ok", comment: "")
+        
+        let alert = UIAlertController(title: NSLocalizedString(alertTitle, comment: ""), message: alertText, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: NSLocalizedString(okButtonText, comment: ""), style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }

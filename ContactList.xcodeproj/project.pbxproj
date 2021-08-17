@@ -13,6 +13,7 @@
 		E9C7996726CAAB110045DF22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C7996526CAAB110045DF22 /* Main.storyboard */; };
 		E9C7996926CAAB110045DF22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C7996826CAAB110045DF22 /* Assets.xcassets */; };
 		E9C7996C26CAAB110045DF22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C7996A26CAAB110045DF22 /* LaunchScreen.storyboard */; };
+		E9C7997926CBC1E40045DF22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9C7997B26CBC1E40045DF22 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		E9C7996826CAAB110045DF22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C7996B26CAAB110045DF22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C7996D26CAAB110045DF22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C7997626CBC13E0045DF22 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		E9C7997A26CBC1E40045DF22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9C7997C26CBC1EA0045DF22 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				E9C7996826CAAB110045DF22 /* Assets.xcassets */,
 				E9C7996A26CAAB110045DF22 /* LaunchScreen.storyboard */,
 				E9C7996D26CAAB110045DF22 /* Info.plist */,
+				E9C7997B26CBC1E40045DF22 /* Localizable.strings */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = E9C7995326CAAB110045DF22;
 			productRefGroup = E9C7995D26CAAB110045DF22 /* Products */;
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C7996C26CAAB110045DF22 /* LaunchScreen.storyboard in Resources */,
+				E9C7997926CBC1E40045DF22 /* Localizable.strings in Resources */,
 				E9C7996926CAAB110045DF22 /* Assets.xcassets in Resources */,
 				E9C7996726CAAB110045DF22 /* Main.storyboard in Resources */,
 			);
@@ -150,6 +157,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E9C7996626CAAB110045DF22 /* Base */,
+				E9C7997626CBC13E0045DF22 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -162,6 +170,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		E9C7997B26CBC1E40045DF22 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C7997A26CBC1E40045DF22 /* en */,
+				E9C7997C26CBC1EA0045DF22 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -169,6 +186,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +248,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -289,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQ2G678D68;
 				INFOPLIST_FILE = ContactList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.xttb4.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQ2G678D68;
 				INFOPLIST_FILE = ContactList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.xttb4.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
